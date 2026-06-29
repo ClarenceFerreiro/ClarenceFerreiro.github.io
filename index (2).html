@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Павел Хвалько — QA Engineer / Technical Support</title>
+    <style>
+        :root {
+            --text: #1a1a1a;
+            --text-secondary: #4a5568;
+            --border: #e2e8f0;
+            --link: #2b6cb0;
+            --bg: #ffffff;
+            --bg-secondary: #f7fafc;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+        h1 { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+        h2 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-secondary); margin-bottom: 16px; border-bottom: 2px solid var(--border); padding-bottom: 6px; }
+        h3 { font-size: 16px; font-weight: 600; margin: 20px 0 6px 0; }
+        h4 { font-size: 14px; font-weight: 600; margin: 14px 0 4px 0; }
+        .subtitle { font-size: 16px; color: var(--text-secondary); margin-bottom: 12px; }
+        .contact { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; margin-bottom: 8px; }
+        .contact a { color: var(--link); text-decoration: none; }
+        .contact a:hover { text-decoration: underline; }
+        .contact span { color: var(--text-secondary); }
+        p { margin-bottom: 10px; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        li { margin-bottom: 4px; }
+        .summary { background: var(--bg-secondary); padding: 14px 18px; border-radius: 6px; margin-bottom: 20px; }
+        .project { border-left: 3px solid var(--link); padding-left: 14px; margin-bottom: 16px; }
+        .project-title { font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+        .project-title a { color: var(--link); text-decoration: none; }
+        .project-title a:hover { text-decoration: underline; }
+        .project-desc { color: var(--text-secondary); font-size: 14px; margin-bottom: 6px; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 20px; }
+        .skill-group h4 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary); margin-bottom: 6px; }
+        .skill-group p { font-size: 14px; line-height: 1.5; }
+        .job { margin-bottom: 20px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .job-company { font-weight: 600; }
+        .job-period { font-size: 13px; color: var(--text-secondary); white-space: nowrap; }
+        .job-title { font-size: 14px; color: var(--text-secondary); margin-bottom: 8px; }
+        .print-btn {
+            position: fixed; top: 20px; right: 20px;
+            background: var(--link); color: #fff; border: none;
+            padding: 10px 18px; border-radius: 6px; cursor: pointer;
+            font-size: 14px; font-weight: 500;
+        }
+        .print-btn:hover { background: #2c5282; }
+        @media print {
+            .print-btn { display: none; }
+            body { padding: 0; font-size: 12px; }
+            .container { max-width: 100%; }
+            a { text-decoration: none; color: var(--text); }
+        }
+        @media (max-width: 480px) {
+            body { padding: 20px 14px; }
+            h1 { font-size: 22px; }
+            .contact { flex-direction: column; gap: 2px; }
+            .job-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">🖨 Печать / Сохранить PDF</button>
+    <div class="container">
+        <header>
+            <h1>Павел Хвалько</h1>
+            <div class="subtitle">QA Engineer / Technical Support Specialist</div>
+            <div class="contact">
+                <span>📞 +375 (44) 790-15-97</span>
+                <span>✉️ <a href="mailto:7901597@gmail.com">7901597@gmail.com</a></span>
+                <span>💻 <a href="https://github.com/ClarenceFerreiro">github.com/ClarenceFerreiro</a></span>
+                <span>✈️ <a href="https://t.me/ClarenceFereiro">@ClarenceFereiro</a></span>
+                <span>📍 Минск, Беларусь</span>
+            </div>
+        </header>
+
+        <h2>🎯 Summary</h2>
+        <div class="summary">
+            <p>QA Engineer с <strong>3+ годами опыта ручного тестирования</strong> и сильным бэкграундом в IT-инфраструктуре. Комбинирую навыки тестировщика и системного администратора: понимаю, как работают системы «под капотом», что позволяет находить баги на стыке frontend, backend и инфраструктуры.</p>
+            <p>Стек: PostgreSQL, REST API, Postman, Newman, TypeScript, Node.js, GitHub Actions, Docker, Linux, Active Directory, VPN.</p>
+            <p><strong>GitHub портфолио:</strong> <a href="https://github.com/ClarenceFerreiro">github.com/ClarenceFerreiro</a> — автотесты API с CI/CD, Allure Reports, мониторинг production-сайтов.</p>
+        </div>
+
+        <h2>🔧 Ключевые навыки</h2>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <h4>Тестирование</h4>
+                <p>Ручное, регрессионное, UI/UX, API (REST), тест-кейсы, чек-листы, баг-репорты, GitLab Issues</p>
+            </div>
+            <div class="skill-group">
+                <h4>Автоматизация</h4>
+                <p>TypeScript, Jest, Supertest, Postman, Newman, JSON Schema (AJV), k6 load testing</p>
+            </div>
+            <div class="skill-group">
+                <h4>CI/CD & DevOps</h4>
+                <p>GitHub Actions, GitLab CI, Docker, Git, GitHub Pages</p>
+            </div>
+            <div class="skill-group">
+                <h4>Инфраструктура</h4>
+                <p>Linux, Windows Server, Active Directory, GPO, VPN (Kerio), сети, резервное копирование</p>
+            </div>
+            <div class="skill-group">
+                <h4>Базы данных</h4>
+                <p>PostgreSQL, SQL (SELECT, JOIN, фильтрация, валидация данных)</p>
+            </div>
+            <div class="skill-group">
+                <h4>Языки</h4>
+                <p>Русский — родной, Белорусский — родной, Английский — Pre-Intermediate (чтение техдокументации)</p>
+            </div>
+        </div>
+
+        <h2>💼 Опыт работы</h2>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-company">Lexx Software Co Ltd</span>
+                <span class="job-period">Сентябрь 2021 — Январь 2025 (3 г. 5 мес.)</span>
+            </div>
+            <div class="job-title">QA Engineer / Специалист технической поддержки | Финансовый сектор</div>
+            <ul>
+                <li>Ручное тестирование веб-приложения перед релизами: функциональное, регрессионное, UI/UX</li>
+                <li>Составление и поддержка тест-кейсов; проверка фиксов после закрытия багов в GitLab</li>
+                <li>Тестирование REST API эндпоинтов через Postman</li>
+                <li>Техподдержка пользователей: диагностика, консультации, эскалация багов в разработку</li>
+                <li>Ведение документации по типовым кейсам, сокращение времени решения повторяющихся обращений</li>
+                <li>Анализ обратной связи и конкурентного ландшафта; предложения по улучшению UI и функционала</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-company">ООО «Мулеманс»</span>
+                <span class="job-period">Август 2017 — Сентябрь 2021 (4 г. 2 мес.)</span>
+            </div>
+            <div class="job-title">Специалист по поддержке и контенту</div>
+            <ul>
+                <li>Техническая поддержка пользователей сайта: консультирование по функционалу, решение инцидентов</li>
+                <li>Администрирование контента в CMS: публикация, структурирование разделов, аудит контента</li>
+                <li>Сбор обратной связи от пользователей для доработки контент-стратегии</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-company">БЕЛПРОНТО, СП ООО (irr.by)</span>
+                <span class="job-period">Март 2016 — Апрель 2017 (1 г. 2 мес.)</span>
+            </div>
+            <div class="job-title">Системный администратор / IT-специалист</div>
+            <ul>
+                <li>Администрирование IT-инфраструктуры: 20+ рабочих станций, серверы, сетевое оборудование</li>
+                <li>Active Directory: учётные записи, группы безопасности, GPO</li>
+                <li>VPN на базе Kerio Control; настройка сетевых ресурсов и политик доступа</li>
+                <li>Резервное копирование, профилактика сбоев, Help Desk</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-company">ООО «ХИКС»</span>
+                <span class="job-period">Февраль 2013 — Декабрь 2016 (3 г. 11 мес.)</span>
+            </div>
+            <div class="job-title">Экономист</div>
+            <ul>
+                <li>Автоматизация документооборота, работа с 1С:Бухгалтерия / 1С:Предприятие</li>
+                <li>Ведение платёжных операций, сверка с контрагентами, отчётность в ФСЗН</li>
+            </ul>
+        </div>
+
+        <h2>🚀 Проекты & Портфолио</h2>
+
+        <div class="project">
+            <div class="project-title"><a href="https://github.com/ClarenceFerreiro/postman-api-tests">postman-api-tests</a></div>
+            <div class="project-desc">REST API automation suite</div>
+            <ul>
+                <li><strong>30+ автотестов</strong> на TypeScript/Supertest с data-driven подходом</li>
+                <li><strong>4 параллельных CI job</strong> в GitHub Actions: smoke → regression → negative → performance</li>
+                <li><a href="https://clarenceferreiro.github.io/postman-api-tests/">Live Allure Reports</a> на GitHub Pages</li>
+                <li>JSON Schema валидация (AJV), load testing на k6, Telegram-уведомления</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title"><a href="https://github.com/ClarenceFerreiro/netgrid-monitor">netgrid-monitor</a></div>
+            <div class="project-desc">Uptime monitoring для production-сайтов</div>
+            <ul>
+                <li>Мониторинг 3 сайтов через GitHub Actions cron (HTTP 200 + SSL expiry)</li>
+                <li>Telegram alerts при downtime, GitHub Issues fallback</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title"><a href="https://github.com/ClarenceFerreiro/telegram-test-bot">telegram-test-bot</a></div>
+            <div class="project-desc">Telegram-бот для управления QA-тестами</div>
+            <ul>
+                <li>Команды: /status, /report, /run — интеграция с GitHub Actions API</li>
+                <li>Webhook на Express, деплой на Railway</li>
+            </ul>
+        </div>
+
+        <h2>🎓 Образование</h2>
+        <p><strong>Международный университет «МИТСО», Минск</strong> — Финансы и кредит, 2012</p>
+
+        <h2>📌 Дополнительно</h2>
+        <ul>
+            <li>Формат: удалённо, гибрид, офис (время в пути до 1,5 часов)</li>
+            <li>Готов к редким командировкам</li>
+            <li>Имеется собственный автомобиль, права категории A, B</li>
+        </ul>
+    </div>
+</body>
+</html>
